@@ -1,4 +1,4 @@
-# SnapDeck---An-Instagram-Pinterest-Clone
+# SnapDeck
 Responsive Instagram-inspired UI built with vanilla HTML, CSS, and JavaScript
 ## Features (In Progress)
 - Sidebar navigation layout
