@@ -1,4 +1,4 @@
-* {
+﻿* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -505,7 +505,7 @@ body {
   border-radius: 10px;
   padding: 0.8rem;
 
-  background-image: url(/assets/icons/download.png);
+  background-image: url(./assets/icons/download.png);
   background-size: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,7 +516,7 @@ body {
 .download-button:hover {
   transition: all ease-in-out 0.2s;
   background-color: white;
-  background-image: url(/assets/icons/download-active.png);
+  background-image: url(./assets/icons/download-active.png);
 
   cursor: pointer;
 }
@@ -1267,3 +1267,4 @@ body {
     column-count: 2;
   }
 }
+

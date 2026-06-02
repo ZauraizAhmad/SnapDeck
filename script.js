@@ -1,4 +1,4 @@
-/* GENERAL FUNCTIONS */
+﻿/* GENERAL FUNCTIONS */
 function toggleIcons() {
   document.getElementById("visible").classList.toggle("active");
   document.getElementById("visible").classList.toggle("hide");
@@ -33,9 +33,9 @@ function setActiveIcon() {
     const iconName = icon.dataset.icon;
 
     if (iconName === currentPage) {
-      icon.src = `/assets/icons/${iconName}-active.png`;
+      icon.src = `./assets/icons/${iconName}-active.png`;
     } else {
-      icon.src = `/assets/icons/${iconName}.png`;
+      icon.src = `./assets/icons/${iconName}.png`;
     }
   });
 }
@@ -59,7 +59,7 @@ function toggleMenu(e, panelName) {
     // If the same panel is open then close it
     if (openPanel === panelName) {
       panel.style.left = hidePos;
-      icon.src = `/assets/icons/${panelName}.png`;
+      icon.src = `./assets/icons/${panelName}.png`;
       openPanel = null;
       return;
     }
@@ -70,17 +70,17 @@ function toggleMenu(e, panelName) {
       const oldIcon = document.querySelector(`.${openPanel}-icon`);
       if (oldPanel && oldIcon) {
         oldPanel.style.left = hidePos;
-        oldIcon.src = `/assets/icons/${openPanel}.png`;
+        oldIcon.src = `./assets/icons/${openPanel}.png`;
       }
     }
 
     // Open the new panel
     panel.style.left = showPos;
-    icon.src = `/assets/icons/${panelName}-active.png`;
+    icon.src = `./assets/icons/${panelName}-active.png`;
     openPanel = panelName;
   } else {
     document.getElementById("add").style.display = "flex";
-    document.querySelector(`.add-icon`).src = `/assets/icons/add-active.png`;
+    document.querySelector(`.add-icon`).src = `./assets/icons/add-active.png`;
   }
 }
 
@@ -136,7 +136,7 @@ window.addEventListener("DOMContentLoaded", () => {
 /* Add a Post Panel */
 function closePanel() {
   document.getElementById("add").style.display = "none";
-  document.querySelector(`.add-icon`).src = `/assets/icons/add.png`;
+  document.querySelector(`.add-icon`).src = `./assets/icons/add.png`;
 }
 
 /* Shutter Button Explore */
@@ -153,3 +153,4 @@ const shutterArea = document.querySelectorAll(".shutter-button");
 shutterArea.addEventListener("click", () => {
   shutterI.classList.toggle("active-shutter");
 });
+
