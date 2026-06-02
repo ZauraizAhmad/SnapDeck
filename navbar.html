@@ -1,0 +1,84 @@
+<!-- navbar.html -->
+<nav>
+  <div class="menu-bar">
+    <img class="home-logo" src="/assets/logo/logo_light.png" alt="Seen Logo" />
+    <div class="menu-list">
+      <a
+        class="menu-button"
+        href="home.html"
+        data-page="home"
+        data-label="Home"
+      >
+        <img
+          src="/assets/icons/home.png"
+          alt="home icon"
+          class="menu-icon"
+          data-icon="home"
+        />
+      </a>
+      <a
+        class="menu-button"
+        href="explore.html"
+        data-page="explore"
+        data-label="Explore"
+      >
+        <img
+          src="/assets/icons/explore.png"
+          alt="home icon"
+          class="menu-icon"
+          data-icon="explore"
+        />
+      </a>
+      <a
+        class="menu-button"
+        href="#"
+        onclick="toggleMenu(event, 'notification')"
+        data-page="notification"
+        data-label="Notification"
+      >
+        <img
+          src="/assets/icons/notification.png"
+          alt="home icon"
+          class="menu-icon notification-icon"
+          data-icon="notification"
+        />
+      </a>
+      <a
+        class="menu-button"
+        href="profile.html"
+        data-page="profile"
+        data-label="Profile"
+      >
+        <img
+          src="/assets/icons/profile.png"
+          alt="home icon"
+          class="menu-icon"
+          data-icon="profile"
+        />
+      </a>
+      <a
+        class="menu-button"
+        onclick="toggleMenu(event,'settings')"
+        data-page="settings"
+        data-label="Settings"
+      >
+        <img
+          src="/assets/icons/settings.png"
+          alt="home icon"
+          class="menu-icon settings-icon"
+          data-icon="settings"
+        />
+      </a>
+    </div>
+    <a
+      class="menu-button add-label"
+      onclick="toggleMenu(event,'add')"
+      data-label="Add a Post"
+      ><img
+        src="assets/icons/add.png"
+        alt="home icon"
+        class="menu-icon add-icon"
+        data-icon="add"
+    /></a>
+  </div>
+</nav>
